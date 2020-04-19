@@ -1,5 +1,5 @@
 import React from 'react';
-import './playlist.scss';
+import './playlist.style.scss';
 
 class Playlist extends React.Component {
   render() {
