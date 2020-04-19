@@ -3,9 +3,9 @@ import React from 'react';
 class SearchBar extends React.Component {
   render() {
     return (
-      <div className='searchBar'>
+      <div className='SearchBar'>
         <input placeholder='Enter A Song, Album, or Artist' />
-        <button className='searchButton'>SEARCH</button>
+        <button className='SearchButton'>SEARCH</button>
       </div>
     )
   }
