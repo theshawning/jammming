@@ -1,19 +1,31 @@
 import React from 'react';
 import './App.style.scss';
 
-function App() {
-  return (
-    <div>
-    <h1>Ja<span className='highlight'>mmm</span>ing</h1>
-      <div className="App">
-        {/* searchbar component */}
-        <div className='App-playlist'>
-          {/* search results component */}
-          {/* playlist component */}
-        </div>
-      </div>    
-    </div>
-  );
+import SearchBar from '../searchBar/searchBar.component';
+import SearchResults from '../searchResults/searchResults.component';
+import PlayList from '../playlist/playlist.component';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { searchResults: [] };
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Ja<span className='highlight'>mmm</span>ing</h1>
+        <div className="App">
+          <SearchBar />
+          <div className='App-playlist'>
+            <SearchResults />
+            <PlayList />
+          </div>
+        </div>    
+      </div>
+    )
+  }
 }
 
 export default App;
