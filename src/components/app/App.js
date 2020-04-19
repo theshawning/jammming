@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.scss';
 
-import SearchBar from '../searchBar/searchBar.component';
-
 function App() {
   return (
     <div>
