@@ -10,6 +10,7 @@
 
 # production
 /build
+/src/util/clientId.js
 
 # misc
 .DS_Store
